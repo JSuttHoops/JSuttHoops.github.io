@@ -78,24 +78,49 @@ description: Portfolio, writing, and basketball data work by Jacob Sutton.
   <section class="section" id="reading">
     <div class="section-heading">
       <h2>Things I'm reading</h2>
-      <p>Books, essays, reports, and links worth returning to.</p>
+      <p>Recent books, essays, reports, and links worth returning to.</p>
     </div>
 
     <div class="reading-shelf">
-      <a class="reading-card" href="#">
-        <span class="cover-slot">Cover</span>
-        <strong>Book or article title</strong>
-        <em>Author, publication, or why it matters.</em>
+      <a class="reading-card" href="https://bookshop.org/a/3214/9781250352460">
+        <img src="/assets/images/reading/why-we-click.jpg" alt="Cover of Why We Click by Kate Murphy" />
+        <span class="book-title">Why We Click</span>
+        <span class="book-author">Kate Murphy</span>
+        <span class="book-isbn">ISBN 9781250352460</span>
+        <em>A social-science look at why people fall into rhythm with each other and why that sync matters.</em>
+        <span class="book-action">View on Bookshop</span>
       </a>
-      <a class="reading-card" href="#">
-        <span class="cover-slot">Image</span>
-        <strong>Another link goes here</strong>
-        <em>Drop in a web image, book cover, or plain text note.</em>
+      <a class="reading-card" href="https://bookshop.org/a/3214/9781529925234">
+        <img src="/assets/images/reading/flourish.jpg" alt="Cover of Flourish by Daniel Coyle" />
+        <span class="book-title">Flourish</span>
+        <span class="book-author">Daniel Coyle</span>
+        <span class="book-isbn">ISBN 9781529925234</span>
+        <em>A concise field guide to the conditions that create meaning, joy, vitality, and connection.</em>
+        <span class="book-action">View on Bookshop</span>
       </a>
-      <a class="reading-card" href="#">
-        <span class="cover-slot">Note</span>
-        <strong>Open slot</strong>
-        <em>Use this as a repeatable template for whatever is current.</em>
+      <a class="reading-card" href="https://bookshop.org/search?keywords=Humor%20Me%20Chris%20Duffy">
+        <img src="/assets/images/reading/humor-me.jpg" alt="Cover of Humor Me by Chris Duffy" />
+        <span class="book-title">Humor Me</span>
+        <span class="book-author">Chris Duffy</span>
+        <span class="book-isbn">ISBN pending</span>
+        <em>A bright case for laughter as a way to become more present, creative, connected, and happy.</em>
+        <span class="book-action">Search Bookshop</span>
+      </a>
+      <a class="reading-card" href="https://bookshop.org/a/3214/9781603586740">
+        <img src="/assets/images/reading/doughnut-economics.jpg" alt="Cover of Doughnut Economics by Kate Raworth" />
+        <span class="book-title">Doughnut Economics</span>
+        <span class="book-author">Kate Raworth</span>
+        <span class="book-isbn">ISBN 9781603586740</span>
+        <em>A challenge to old economic assumptions, built around thriving within social and planetary limits.</em>
+        <span class="book-action">View on Bookshop</span>
+      </a>
+      <a class="reading-card" href="https://bookshop.org/a/3214/9781474619974">
+        <img src="/assets/images/reading/how-to-read-numbers.jpg" alt="Cover of How to Read Numbers by Tom Chivers and David Chivers" />
+        <span class="book-title">How to Read Numbers</span>
+        <span class="book-author">Tom Chivers &amp; David Chivers</span>
+        <span class="book-isbn">ISBN 9781474619974</span>
+        <em>A practical guide to spotting statistical traps in news, politics, science, and public debate.</em>
+        <span class="book-action">View on Bookshop</span>
       </a>
     </div>
   </section>

@@ -131,7 +131,7 @@ main {
 
 .nav-links a:hover,
 .index-row:hover strong,
-.reading-card:hover strong {
+.reading-card:hover .book-title {
   color: var(--accent);
 }
 
@@ -236,7 +236,7 @@ em {
 }
 
 #reading {
-  grid-column: span 8;
+  grid-column: 1 / -1;
 }
 
 #about {
@@ -282,8 +282,16 @@ em {
 .writing-stack,
 .reading-shelf {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 16px;
+}
+
+.writing-stack {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.reading-shelf {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  align-items: stretch;
 }
 
 .writing-stack article {
@@ -318,34 +326,73 @@ em {
 
 .reading-card {
   display: grid;
-  gap: 10px;
-  align-content: start;
-  min-height: 260px;
+  grid-template-rows: auto auto auto auto 1fr auto;
+  gap: 8px;
+  min-height: 100%;
   padding: 16px;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 18px;
   background: color-mix(in srgb, var(--surface) 86%, transparent);
   text-decoration: none;
 }
 
-.cover-slot {
-  display: grid;
-  min-height: 150px;
-  place-items: center;
+.reading-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: center;
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 12px;
   background: var(--surface-strong);
-  color: var(--muted);
-  font-size: 0.82rem;
 }
 
-.reading-card strong {
+.book-title {
+  margin-top: 4px;
+  color: var(--text);
   font-weight: 600;
+  line-height: 1.25;
+}
+
+.book-author,
+.book-isbn,
+.reading-card em {
+  color: var(--muted);
+  font-style: normal;
+}
+
+.book-author,
+.book-isbn {
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+
+.book-isbn {
+  color: color-mix(in srgb, var(--muted) 80%, var(--accent));
 }
 
 .reading-card em {
-  font-style: normal;
-  line-height: 1.55;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.book-action {
+  align-self: end;
+  width: fit-content;
+  margin-top: 8px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--line);
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.reading-card:hover {
+  background: color-mix(in srgb, var(--surface) 62%, var(--accent-soft));
+}
+
+.reading-card:hover .book-action {
+  border-color: currentColor;
 }
 
 .about {

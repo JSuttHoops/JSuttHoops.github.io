@@ -1,0 +1,22 @@
+title: Jacob Sutton
+description: Portfolio, writing, and basketball data work by Jacob Sutton.
+url: "https://jsutthoops.github.io"
+baseurl: ""
+lang: en
+timezone: America/Chicago
+
+markdown: kramdown
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - PRODUCT.md
+  - README.md
+  - "*.docx"

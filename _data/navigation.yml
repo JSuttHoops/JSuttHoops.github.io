@@ -1,0 +1,12 @@
+- label: Basketball
+  url: "/#basketball"
+- label: Work
+  url: "/#work"
+- label: Writing
+  url: "/#writing"
+- label: Reading
+  url: "/#reading"
+- label: About
+  url: "/#about"
+- label: GitHub
+  url: "https://github.com/JSuttHoops"

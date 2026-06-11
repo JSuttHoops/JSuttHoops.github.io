@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<main class="article-main">
+  <article class="article-shell">
+    <header class="article-header">
+      {% if page.kicker %}
+        <p class="article-kicker">{{ page.kicker }}</p>
+      {% endif %}
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <p class="article-subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+      <p class="article-meta">
+        {% if page.author_url %}
+          <a href="{{ page.author_url }}">{{ page.author }}</a>
+        {% else %}
+          {{ page.author }}
+        {% endif %}
+        {% if page.date_label %}<span>{{ page.date_label }}</span>{% endif %}
+        {% if page.status %}<span>{{ page.status }}</span>{% endif %}
+      </p>
+    </header>
+
+    <div class="article-prose">
+      {{ content }}
+    </div>
+  </article>
+</main>

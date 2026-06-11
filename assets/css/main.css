@@ -376,22 +376,28 @@ em {
   line-height: 1.5;
 }
 
-.book-action {
+.book-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   align-self: end;
-  width: fit-content;
   margin-top: 8px;
+}
+
+.book-links a {
   padding-bottom: 2px;
   border-bottom: 1px solid var(--line);
   color: var(--accent);
   font-size: 0.86rem;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .reading-card:hover {
   background: color-mix(in srgb, var(--surface) 62%, var(--accent-soft));
 }
 
-.reading-card:hover .book-action {
+.book-links a:hover {
   border-color: currentColor;
 }
 
